@@ -6,44 +6,44 @@
     <title>Sorumluluk Reddi ve Veri Kaynağı</title>
     <style>
         body {
-            font-family: sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 2rem;
             line-height: 1.6;
-            padding: 15px;
-            color: #333;
+            background-color: #f8f9fa;
+            color: #343a40;
         }
-        h2 {
-            color: #2c3e50;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
-        }
-        h3 {
-            color: #34495e;
-            margin-top: 20px;
-        }
-        p {
-            margin-bottom: 10px;
-        }
-        strong {
-            color: #c0392b; /* Kırmızıya yakın bir renk dikkat çekmesi için */
+        h1, h2, h3 {
+            color: #0056b3;
         }
         a {
-            color: #2980b9;
+            color: #0056b3;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
+        ul {
+            padding-left: 20px;
+        }
         .container {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
         .highlight {
             background-color: #e8f4f8;
-            padding: 10px;
-            border-left: 3px solid #3498db;
-            margin-bottom:15px;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        /* Sadece önemli bilgilendirme başlığını kırmızı yapmak için özel sınıf */
+        .important-header {
+            color: #d9534f; /* Kırmızı renk */
         }
     </style>
 </head>
@@ -56,7 +56,7 @@
         <p>İzmir Su Kesintileri uygulaması, İzmir il sınırları içerisindeki kullanıcılarımıza planlı ve anlık (arıza kaynaklı) su kesintileri hakkında güncel ve kolay erişilebilir bilgiler sunmayı amaçlamaktadır.</p>
 
         <div class="highlight">
-            <h3><strong>ÖNEMLİ BİLGİLENDİRME VE SORUMLULUK REDDİ:</strong></h3>
+            <h3 class="important-header"><strong>ÖNEMLİ BİLGİLENDİRME VE SORUMLULUK REDDİ:</strong></h3>
             <p>Bu uygulama;</p>
             <ul>
                 <li>İzmir Büyükşehir Belediyesi'nin,</li>
@@ -67,7 +67,7 @@
             <p>Uygulamamız bağımsız bir proje olup, adı geçen resmi kurumlarla herhangi bir ortaklığı, iştiraki veya doğrudan bir bağı bulunmamaktadır.</p>
         </div>
 
-        <h3>Veri Kaynağı:</h3>
+               <h3>Veri Kaynağı:</h3>
         <p>Uygulamada sunulan tüm su kesintisi bilgileri, İzmir Büyükşehir Belediyesi tarafından şeffaflık ve kamu yararı ilkeleri doğrultusunda yönetilen ve kamuya açık olarak paylaşılan <strong>İzmir Büyükşehir Belediyesi Açık Veri Portalı</strong> üzerinden temin edilmektedir.</p>
         <p>
             <strong>Ana Açık Veri Portalı Adresi:</strong> <a href="https://acikveri.bizizmir.com/" target="_blank">https://acikveri.bizizmir.com/</a>
@@ -78,10 +78,14 @@
         <p>
             Uygulamanın temel aldığı ve İZSU Yazılım Şube Müdürlüğü tarafından hazırlanan ana veri seti, <strong>"Arıza Kaynaklı Düzensiz Su Kesintileri"</strong> başlığı altında sunulmaktadır. Bu veri seti, su teminindeki arızalar nedeniyle meydana gelen düzensiz su kesintilerine dair detaylı bilgileri (kesinti tarihleri, açıklamaları, ilçeleri, mahalleleri, kesinti türleri, arıza giderilme tarihleri ve kesinti süreleri gibi önemli verileri) içermektedir. Bu spesifik veri setine ve güncel detaylarına doğrudan şu adresten ulaşabilirsiniz: <a href="https://acikveri.bizizmir.com/dataset/ariza-kaynakli-duzensiz-su-kesintileri" target="_blank">https://acikveri.bizizmir.com/dataset/ariza-kaynakli-duzensiz-su-kesintileri</a>.
         </p>
-        <p>Verilerin doğruluğu, güncelliği ve içeriği tamamen kaynak kurum olan İzmir Büyükşehir Belediyesi ve İZSU'nun sorumluluğundadır. Uygulamamız, bu resmi ve kamuya açık verileri derleyerek kullanıcılara bilgilendirme amacıyla sunmaktadır. Veri kaynağında oluşabilecek anlık değişiklikler veya gecikmelerden uygulamamız sorumlu tutulamaz.</p>
+        <p>
+			Verilerin doğruluğu, güncelliği ve içeriği tamamen kaynak kurum olan İzmir Büyükşehir Belediyesi ve İZSU'nun sorumluluğundadır. Uygulamamız, bu resmi ve kamuya açık verileri derleyerek kullanıcılara bilgilendirme amacıyla sunmaktadır. Veri kaynağında oluşabilecek anlık değişiklikler veya gecikmelerden uygulamamız sorumlu tutulamaz.
+		</p>
 
         <h3>Teşekkür:</h3>
-        <p>İzmir Büyükşehir Belediyesi'ne ve İZSU'ya, değerli verileri kamuya açık bir şekilde paylaşarak vatandaşların bilgiye erişimini kolaylaştırdıkları ve bu açık veri portalını oluşturup yönettikleri için teşekkür ederiz. Ayrıca, bu verilerin servis olarak sunulmasında emeği geçen tüm teknik ekiplere de katkılarından dolayı minnettarız.</p>
+        <p>
+			İzmir Büyükşehir Belediyesi'ne ve İZSU'ya, değerli verileri kamuya açık bir şekilde paylaşarak vatandaşların bilgiye erişimini kolaylaştırdıkları ve bu açık veri portalını oluşturup yönettikleri için teşekkür ederiz. Ayrıca, bu verilerin servis olarak sunulmasında emeği geçen tüm teknik ekiplere de katkılarından dolayı minnettarız.
+		</p>
     </div>
 
 </body>
